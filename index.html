@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.B.4_Consumir_JSON_createElement</title>
+</head>
+<body>
+    <ul id="producto"></ul>
+    <script>
+        fetch("producto.json")
+        .then(response => response.json())
+        .then(producto => {
+            for(let producto of productos){
+            elementoLista = document.createElement("li");
+            elementoLista.textContent = producto;
+            elementoLista.setAttribute("style","color:blue");
+            document.getElementById("producto").appendChild(elementoLista);
+        }
+        });
+        
+    </script>
+</body>
+</html>
