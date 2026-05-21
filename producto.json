@@ -1,6 +1,5 @@
 {
-      
     "Marca" : "HP", 
-    "producto": ["Ordenador", "Tablet", "Smartphone"],
+    "productos": ["Ordenador", "Tablet", "Smartphone"],
     "Estado" : "Nuevo"
 }
