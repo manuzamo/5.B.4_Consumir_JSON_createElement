@@ -10,7 +10,7 @@
     <script>
         fetch("producto.json")
         .then(response => response.json())
-        .then(producto => {
+        .then(productos => {
             for(let producto of productos){
             elementoLista = document.createElement("li");
             elementoLista.textContent = producto;
