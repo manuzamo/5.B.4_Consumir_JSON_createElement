@@ -10,21 +10,16 @@
 
     <script>
 
-        fetch("producto.json")
+        fetch("./producto.json")
         .then(response => response.json())
         .then(datos => {
 
             for(let producto of datos.productos){
-
                 let elementoLista = document.createElement("li");
-
                 elementoLista.textContent = producto;
-
                 elementoLista.style.color = "blue";
-
                 document.getElementById("producto").appendChild(elementoLista);
             }
-
         });
 
     </script>
